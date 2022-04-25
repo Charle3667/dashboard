@@ -1,0 +1,255 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+div {
+}
+
+.container {
+    text-align: center;
+    /* height: 630px; */
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(1fr 150px) 3fr;
+    grid-template-areas: 
+    "dashboard header"
+    "dashboard mainBody";
+}
+
+.dashboard {
+    font-weight: bold;
+    color: #fef2f2;
+    background-color: #b91c1c;
+    grid-area: dashboard;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/*  Logo Styling  */
+
+.logo {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    grid-template-areas: 
+    "logo1 logo2"
+    "logo1 logo4"
+    "logo3 logo4";
+    margin-right: 10px;
+}
+.logo div {
+    background-color: white;
+}
+
+.logo1 {
+    grid-area: logo1;
+}
+.logo2 {
+    grid-area: logo2;
+}
+.logo3 {
+    grid-area: logo3;
+}
+.logo4 {
+    grid-area: logo4;
+}
+
+/*  /Logo Styling/  */
+
+.nav {
+    margin-bottom: 40px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.help li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #fef2f2;
+}
+
+.hrow1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.hrow1search {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.hrow1content {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.notification {
+    background-color: #b91c1c;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.profilePic {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.hrow1search input {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 20%;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+}
+
+.hrow1search button {
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    background-color: #fef2f2;
+    padding-top: 2px;
+}
+
+.hrow1search button img {
+    height: 22px;
+    width: 22px;
+}
+
+.hrow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile div {
+    text-align: left;
+}
+
+.hi {
+    font-size: 14px;
+}
+
+.username {
+    font-size: 20px;
+}
+
+.profile img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.postButtons button {
+    height: 35px;
+    width: 80px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #b91c1c;
+}
+
+.mainBody {
+    grid-area: mainBody;
+    background-color: #fee2e2;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.projectsContainer {
+    padding: 20px;
+    flex-grow: 3;
+    flex-shrink: 1;
+    width: 70%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.projects {
+    border-radius: 25px;
+    background-color: #fef2f2;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+.tealBar {
+    border-radius: 25px 0 0 25px;
+    background-color: #218380;
+}
+
+.miniSideBar {
+    flex-grow: 3;
+    flex-shrink: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.miniSideBar div {
+    border-radius: 25px;
+    background-color: #fef2f2;
+    height: 200px;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+}
